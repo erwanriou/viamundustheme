@@ -1,0 +1,22 @@
+<div class="content">
+  <!-- Header is included in the partial directory. It include the main menu -->
+  {% include directory ~ "/partials/header.html.twig" %}
+  <!-- Header -->
+  <!-- Banner -->
+  <div role="banner" class="banner">
+    {{ page.banner }}
+  </div>
+  <!-- Banner -->
+  <!-- Content -->
+  <main role="main" class="container">
+  {{ page.content }}
+  </main>
+  <!-- Content -->
+  <!-- Footer -->
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+  <!-- Footer -->
+</div>

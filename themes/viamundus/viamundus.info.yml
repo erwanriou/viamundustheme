@@ -1,0 +1,13 @@
+name: Viamundus
+type: theme
+description: The viamundus project is an architecture intermediation platform.
+core: 8.x
+libraries:
+  - viamundus/global-css
+  - viamundus/global-js
+regions:
+  header: 'Header'
+  banner: 'Banner'
+  content: 'Main Content'
+  footer: 'Footer'
+  disable: 'disables block'

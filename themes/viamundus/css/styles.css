@@ -1,0 +1,15 @@
+.content {
+  font-family: arial;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
