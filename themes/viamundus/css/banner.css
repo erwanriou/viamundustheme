@@ -1,0 +1,50 @@
+.banner {
+  display: flex;
+  background: url("../images/banner-background.jpg") no-repeat center center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#block-viamundus-branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  text-align: center;
+  height: 25rem;
+}
+
+#block-viamundus-branding .site-logo img {
+  height: 10rem;
+  margin: 2rem 0;
+}
+
+.site-slogan h1 {
+  font-style: italic;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.site-slogan button {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #fc6503;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.1s linear;
+}
+
+.site-slogan button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #f5a26c;
+}
+.site-slogan p a {
+  color: white;
+}
+.site-slogan p a:hover {
+  font-weight: bold;
+  color: #fc6503;
+}
