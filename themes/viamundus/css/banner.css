@@ -1,15 +1,16 @@
-.banner {
-  display: flex;
-  background: url("../images/banner-background.jpg") no-repeat center center;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
+.region-banner {
+  position: relative;
 }
 
 #block-viamundus-branding {
+  position: absolute;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   text-align: center;
   height: 25rem;
@@ -23,17 +24,20 @@
 .site-slogan h1 {
   font-style: italic;
   font-size: 1rem;
+  color: white;
   margin: 1rem 0;
 }
 
 .site-slogan button {
-  padding: 1rem 2rem;
+  padding: 1.2rem 3rem;
   color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
   background-color: #fc6503;
   border-radius: 0.8rem;
   border: none;
   cursor: pointer;
-  margin: 1rem 0;
+  margin: 2rem 0;
   transition: all 0.1s linear;
 }
 
@@ -47,4 +51,77 @@
 .site-slogan p a:hover {
   font-weight: bold;
   color: #fc6503;
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1470px) {
+  #block-viamundus-branding .site-logo img {
+    height: 9rem;
+    margin: 1.5rem 0;
+  }
+  .site-slogan h1 {
+    margin: 1rem 0;
+  }
+  .site-slogan button {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 1470px) and (min-width: 1200px) {
+  #block-viamundus-branding .site-logo img {
+    height: 8rem;
+    margin: 1rem 0;
+  }
+  .site-slogan h1 {
+    font-size: 0.7rem;
+    margin: 0.8rem 0;
+  }
+  .site-slogan button {
+    font-size: 0.7rem;
+    margin: 0.8rem 0;
+  }
+  .site-slogan p a {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  #block-viamundus-branding .site-logo img {
+    height: 4rem;
+    margin: 1rem 0;
+  }
+  .site-slogan h1 {
+    display: none;
+  }
+  .site-slogan button {
+    font-size: 0.7rem;
+    margin: 2rem 0;
+  }
+  .site-slogan p a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #block-viamundus-branding .site-logo img {
+    height: 4rem;
+    margin: 2rem 0;
+  }
+  .site-slogan h1 {
+    display: none;
+  }
+  .site-slogan button {
+    font-size: 0.5rem;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+  }
+  .site-slogan p a {
+    font-size: 0.5rem;
+  }
+  .view-banner {
+    display: none;
+  }
+  .banner {
+    position: relative;
+    background: url("../images/banner-background.jpg") no-repeat center center;
+    background-size: cover;
+    height: 20rem;
+  }
 }

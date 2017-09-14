@@ -2,13 +2,16 @@ global-css:
   css:
     theme:
       css/reset.css: {}
+      libraries/slick/slick/slick.css: {}
       css/styles.css: {}
       css/menu.css: {}
       css/banner.css: {}
-      css/content.css: {}
+      css/project-list.css: {}
 
 global-js:
   js:
     js/main.js: {}
+    libraries/slick/slick/slick.min.js: {}
+    libraries/blazy/blazy.min.js: {}
   dependencies:
     - core/jquery

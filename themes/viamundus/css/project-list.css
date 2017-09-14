@@ -1,0 +1,160 @@
+projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.view-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-list-field {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: #c7c7c7 1px solid;
+  height: 100%;
+  width: 14.23%;
+  filter: opacity(0.5);
+  transition: filter 0.2s ease;
+}
+
+.project-list-field:hover{
+  filter: opacity(1);
+}
+
+.title-project-field {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  bottom: -20rem;
+  padding: 1rem;
+  background-color: rgba(45, 45, 45, 0.50);
+  transition: all 0.2s ease;
+}
+
+.project-list-field:hover .title-project-field{
+  bottom: 0;
+}
+
+.title-project-field a {
+  color: white;
+  text-align: center;
+}
+
+.image-project-field {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+.image-project-field:hover {
+  transform: scale(1.2);
+}
+
+
+.image-project-field a img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Front page project block styling */
+.projects-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.views-view-grid {
+  width: 100%;
+}
+
+.project-row {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.project-column {
+  position: relative;
+  display: flex;
+  margin: 0 1rem;
+}
+
+.front-image-project-field {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+.front-image-project-field:hover {
+  filter: opacity(0.5);
+}
+
+.front-title-project-field {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  top: 9.4rem;
+  right: 0;
+  left: 0;
+}
+
+.front-title-project-field a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: #fc6503;
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.front-image-project-field a img {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 1800px) and (min-width: 1500px) {
+  .project-list-field {
+  width: 16.6%;
+  }
+}
+@media only screen and (max-width: 1500px) and (min-width: 1300px) {
+  .project-list-field {
+  width: 19.9%;
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+  .project-list-field {
+  width: 24.9%;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 750px) {
+  .project-list-field {
+  width: 49.8%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .project-list-field {
+  width: 100%;
+  }
+}
