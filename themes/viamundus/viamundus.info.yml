@@ -9,5 +9,7 @@ regions:
   header: 'Header'
   banner: 'Banner'
   content: 'Main Content'
-  footer: 'Footer'
+  footer1: 'Footer1'
+  footer2: 'Footer2'
+  footer3: 'Footer3'
   disable: 'disables block'

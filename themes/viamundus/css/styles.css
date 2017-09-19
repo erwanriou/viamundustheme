@@ -4,6 +4,10 @@ body {
   margin: 0 auto;
 }
 
+.content {
+  position: relative;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;

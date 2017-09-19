@@ -6,6 +6,7 @@ global-css:
       css/styles.css: {}
       css/menu.css: {}
       css/banner.css: {}
+      css/footer.css: {}
       css/project-list.css: {}
 
 global-js:

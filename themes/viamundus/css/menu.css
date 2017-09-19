@@ -1,6 +1,14 @@
+/* administration css */
+#toolbar-administration {
+  position: relative;
+}
+
 /* Header css */
 header {
+  position: sticky;
   background-color: #323232;
+  z-index: 99;
+  top: 0;
 }
 
 .region-header {

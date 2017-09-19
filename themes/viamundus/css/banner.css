@@ -35,22 +35,26 @@
   text-transform: uppercase;
   background-color: #fc6503;
   border-radius: 0.8rem;
-  border: none;
+  border: #fc6503 1px solid;
   cursor: pointer;
   margin: 2rem 0;
-  transition: all 0.1s linear;
+  transition: all 0.4s linear;
 }
 
 .site-slogan button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #f5a26c;
+  border: white 1px solid;
 }
 .site-slogan p a {
+  border: white 1px solid;
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
   color: white;
+  transition: all 0.4s ease;
 }
 .site-slogan p a:hover {
-  font-weight: bold;
-  color: #fc6503;
+  background-color: rgba(252, 101, 3, 0.23);
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 1470px) {
@@ -59,31 +63,42 @@
     margin: 1.5rem 0;
   }
   .site-slogan h1 {
-    margin: 1rem 0;
-  }
-  .site-slogan button {
-    margin: 1rem 0;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 1470px) and (min-width: 1200px) {
   #block-viamundus-branding .site-logo img {
-    height: 8rem;
+    height: 5rem;
     margin: 1rem 0;
   }
   .site-slogan h1 {
-    font-size: 0.7rem;
-    margin: 0.8rem 0;
+    display: none;
   }
   .site-slogan button {
     font-size: 0.7rem;
-    margin: 0.8rem 0;
   }
   .site-slogan p a {
     font-size: 0.7rem;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 800px) {
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  #block-viamundus-branding .site-logo img {
+    height: 4rem;
+    margin: 1rem 0;
+  }
+  .site-slogan h1 {
+    display: none;
+  }
+  .site-slogan button {
+    font-size: 0.7rem;
+    margin: 2rem 0;
+  }
+  .site-slogan p a {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
   #block-viamundus-branding .site-logo img {
     height: 4rem;
     margin: 1rem 0;
